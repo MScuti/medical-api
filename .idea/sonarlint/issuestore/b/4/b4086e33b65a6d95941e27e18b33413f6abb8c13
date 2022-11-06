@@ -1,0 +1,26 @@
+
+;python:S125 "Remove this commented out code.(õ”üÎùÿÿÿÿ
+6python:S125$"Remove this commented out code.(ò½ãà
+Fpython:S1172.".Remove the unused function parameter "kwargs".(“ÿ‡š
+Dpython:S1172.",Remove the unused function parameter "args".(“ÿ‡š
+qpython:S11868"YAdd a nested comment explaining why this method is empty, or complete the implementation.(ßØ€œ
+vpython:S1186;"YAdd a nested comment explaining why this method is empty, or complete the implementation.(÷àÈ¥ùÿÿÿÿ
+Lpython:S1172Q"/Remove the unused function parameter "request".(º¢€Õøÿÿÿÿ
+Kpython:S1172Q".Remove the unused function parameter "kwargs".(º¢€Õøÿÿÿÿ
+Ipython:S1172Q",Remove the unused function parameter "args".(º¢€Õøÿÿÿÿ
+Ipython:S1172W",Remove the unused function parameter "args".(¿êÖĞûÿÿÿÿ
+Lpython:S1172W"/Remove the unused function parameter "request".(¿êÖĞûÿÿÿÿ
+Kpython:S1172W".Remove the unused function parameter "kwargs".(¿êÖĞûÿÿÿÿ
+Dpython:S1172p",Remove the unused function parameter "args".(ò¨Í
+qpython:S1186~"YAdd a nested comment explaining why this method is empty, or complete the implementation.(ÉÖÁ
+rpython:S1186"YAdd a nested comment explaining why this method is empty, or complete the implementation.(£ŒùÈ
+Jpython:S1172–",Remove the unused function parameter "args".(›ÑÍƒÿÿÿÿÿ
+Mpython:S1172–"/Remove the unused function parameter "request".(›ÑÍƒÿÿÿÿÿ
+Lpython:S1172–".Remove the unused function parameter "kwargs".(›ÑÍƒÿÿÿÿÿ
+Jpython:S1172¦",Remove the unused function parameter "args".(àù£’şÿÿÿÿ
+Lpython:S1172¦".Remove the unused function parameter "kwargs".(àù£’şÿÿÿÿ
+wpython:S1186­"YAdd a nested comment explaining why this method is empty, or complete the implementation.(¬¶¨ïüÿÿÿÿ
+rpython:S1186°"YAdd a nested comment explaining why this method is empty, or complete the implementation.(’î¤©
+Mpython:S1172À"/Remove the unused function parameter "request".(àù£’şÿÿÿÿ
+Lpython:S1172À".Remove the unused function parameter "kwargs".(àù£’şÿÿÿÿ
+Jpython:S1172À",Remove the unused function parameter "args".(àù£’şÿÿÿÿ
