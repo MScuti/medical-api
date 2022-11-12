@@ -28,19 +28,56 @@
 # ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 # POSSIBILITY OF SUCH DAMAGE.
 
+""" User serialzier, more detail: https://lmwdvqokez.feishu.cn/wiki/wikcnTDaVNgkh0KuCvHqaC72Vxd """
 
-""" Rest API Router """
-
-from core.router import BasicRouter
-
-from apps.patient.v1 import rest as patient_view
-from apps.user.v1 import rest as user_view
-
-router = BasicRouter(common_prefix="api/v1/")
-
-# Patient Router
-router.register("login", user_view.LoginViewSet, basename="login")
-router.register("patient", patient_view.PatientViewSet, basename="patient")
-router.register("user", user_view.UserViewSet, basename="user")
+from rest_framework import serializers
+from apps.user import models
 
 
+class LoginSerialzer(serializers.Serializer):
+    """用户登录"""
+
+    username = serializers.CharField(allow_null=False, max_length=32)
+    password = serializers.CharField(allow_null=False, max_length=32)
+
+
+
+# User serializers, include: create, update, list, detail
+class UserCreateSerializer(serializers.ModelSerializer):
+    """ User Create Serializer """
+
+    class Meta:
+        model = models.User
+        exclude = ('add_time', 'update_time')
+
+
+class UserUpdateSerializer(serializers.ModelSerializer):
+    """ User Update Serializer """
+
+    class Meta:
+        model = models.User
+        exclude = ('add_time', 'update_time')
+
+
+class UserDetailSerializer(serializers.ModelSerializer):
+    """ User Detail Serializer """
+
+    class Meta:
+        model = models.User
+        fields = '__all__'
+
+
+class UserListSerializer(serializers.ModelSerializer):
+    """ User List Serializer """
+
+    class Meta:
+        model = models.User
+        fields = '__all__'
+
+
+user_serializers = {
+    "create": UserCreateSerializer,
+    'list': UserListSerializer,
+    'retrieve': UserDetailSerializer,
+    'partial_update': UserUpdateSerializer
+}

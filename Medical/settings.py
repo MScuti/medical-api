@@ -38,7 +38,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'apps.patient',
+    'apps.user'
 ]
+
+ALLOWED_HOSTS = ['*']
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -136,3 +139,6 @@ REST_FRAMEWORK = {
         'core.filter.BasicOrdringFilter',
     ],
 }
+
+
+AUTH_USER_MODEL = 'user.User'
