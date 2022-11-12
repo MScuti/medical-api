@@ -41,8 +41,6 @@ M
 apps/patient/v1/serializer.py,e/3/e3fcce87f63cb9c79dabd2bde4502c87156736d4
 F
 apps/patient/models.py,1/9/19e6b732034caa7da52328cc290f8eb443c448f3
-C
-apps/user/models.py,9/c/9c49c4e21650381d1eb8e8b4cb5b56b5cc3f335c
 I
 apps/patient/v1/errors.py,a/2/a2b650262d8104be7890e5e12e3a9361fe2772ea
 Q
